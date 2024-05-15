@@ -95,7 +95,7 @@ class TestBooksCollector:
             collector.set_book_genre(name, genre)
         assert books == collector.get_books_genre()
 
-    # Проверяем, что метод get_book_genre возвращает ожидаемый жанр для книги
+    # Проверяем, что метод возвращает ожидаемый жанр для книги
     @pytest.mark.parametrize('book, genre', [
         ('Гордость и предубеждение и зомби', 'Ужасы'),
         ('Нетопырь', 'Детективы'),
