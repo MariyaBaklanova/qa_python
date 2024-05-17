@@ -62,6 +62,8 @@ class TestBooksCollector:
         collector = BooksCollector()
         collector.add_new_book('Гордость и предубеждение и зомби')
         collector.set_book_genre('Гордость и предубеждение и зомби', 'Ужасы')
+        assert collector.get_books_genre() == {'Гордость и предубеждение и зомби': 'Ужасы'}
+
 
     # Проверяем получение книг по жанру из существующих жанров
     def test_get_books_with_specific_genre_add_dict_success(self, collector):
